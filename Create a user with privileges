@@ -1,0 +1,9 @@
+Steps to create a user in phpmyadmin and then to grant the user all the privileges 
+
+sudo mysql -u root -p <password>
+
+create user '<name>'@'localhost' identified by '<password>';
+
+grant all privileges on *.* to '<name>'@'localhost' with grant option;
+
+flush privileges;
